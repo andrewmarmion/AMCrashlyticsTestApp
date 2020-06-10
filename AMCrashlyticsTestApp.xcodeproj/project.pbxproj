@@ -13,9 +13,13 @@
 		2DC28F7724913C71007FB999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F7624913C71007FB999 /* Assets.xcassets */; };
 		2DC28F7A24913C71007FB999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F7924913C71007FB999 /* Preview Assets.xcassets */; };
 		2DC28F7D24913C71007FB999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F7B24913C71007FB999 /* LaunchScreen.storyboard */; };
+		2DC28F8524914276007FB999 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F8424914276007FB999 /* GoogleService-Info.plist */; };
+		55BDBFC7CE01E5A75E446882 /* Pods_AMCrashlyticsTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD6C962B8E77B085A86825 /* Pods_AMCrashlyticsTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7FD61A87F86B2572D00064 /* Pods-AMCrashlyticsTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMCrashlyticsTestApp.release.xcconfig"; path = "Target Support Files/Pods-AMCrashlyticsTestApp/Pods-AMCrashlyticsTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		28FD6C962B8E77B085A86825 /* Pods_AMCrashlyticsTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMCrashlyticsTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC28F6D24913C6F007FB999 /* AMCrashlyticsTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMCrashlyticsTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC28F7024913C6F007FB999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DC28F7224913C6F007FB999 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		2DC28F7924913C71007FB999 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2DC28F7C24913C71007FB999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DC28F7E24913C71007FB999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC28F8424914276007FB999 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D654EE3C0E05CE8754C26FBB /* Pods-AMCrashlyticsTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMCrashlyticsTestApp.debug.xcconfig"; path = "Target Support Files/Pods-AMCrashlyticsTestApp/Pods-AMCrashlyticsTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BDBFC7CE01E5A75E446882 /* Pods_AMCrashlyticsTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A00818C99FB2C558CF6792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D654EE3C0E05CE8754C26FBB /* Pods-AMCrashlyticsTestApp.debug.xcconfig */,
+				1A7FD61A87F86B2572D00064 /* Pods-AMCrashlyticsTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2DC28F6424913C6F007FB999 = {
 			isa = PBXGroup;
 			children = (
 				2DC28F6F24913C6F007FB999 /* AMCrashlyticsTestApp */,
 				2DC28F6E24913C6F007FB999 /* Products */,
+				18A00818C99FB2C558CF6792 /* Pods */,
+				BB5615E4953C73FB051D3BC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		2DC28F6F24913C6F007FB999 /* AMCrashlyticsTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				2DC28F8424914276007FB999 /* GoogleService-Info.plist */,
 				2DC28F7024913C6F007FB999 /* AppDelegate.swift */,
 				2DC28F7224913C6F007FB999 /* SceneDelegate.swift */,
 				2DC28F7424913C6F007FB999 /* ContentView.swift */,
@@ -75,6 +95,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BB5615E4953C73FB051D3BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28FD6C962B8E77B085A86825 /* Pods_AMCrashlyticsTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DC28F8124913C71007FB999 /* Build configuration list for PBXNativeTarget "AMCrashlyticsTestApp" */;
 			buildPhases = (
+				F3324D89840882EF8E9E5B43 /* [CP] Check Pods Manifest.lock */,
 				2DC28F6924913C6F007FB999 /* Sources */,
 				2DC28F6A24913C6F007FB999 /* Frameworks */,
 				2DC28F6B24913C6F007FB999 /* Resources */,
+				2817C297B4845FAF10936D73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DC28F7D24913C71007FB999 /* LaunchScreen.storyboard in Resources */,
+				2DC28F8524914276007FB999 /* GoogleService-Info.plist in Resources */,
 				2DC28F7A24913C71007FB999 /* Preview Assets.xcassets in Resources */,
 				2DC28F7724913C71007FB999 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2817C297B4845FAF10936D73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMCrashlyticsTestApp/Pods-AMCrashlyticsTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMCrashlyticsTestApp/Pods-AMCrashlyticsTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMCrashlyticsTestApp/Pods-AMCrashlyticsTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3324D89840882EF8E9E5B43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMCrashlyticsTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DC28F6924913C6F007FB999 /* Sources */ = {
@@ -282,9 +355,11 @@
 		};
 		2DC28F8224913C71007FB999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D654EE3C0E05CE8754C26FBB /* Pods-AMCrashlyticsTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"AMCrashlyticsTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6748NP3BTA;
 				ENABLE_PREVIEWS = YES;
@@ -293,8 +368,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jumpsaildive.test.AMCrashlyticsTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jumpsaildive.amcrashlyticstestapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = amcrashlyticstestapp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,9 +378,11 @@
 		};
 		2DC28F8324913C71007FB999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7FD61A87F86B2572D00064 /* Pods-AMCrashlyticsTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"AMCrashlyticsTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6748NP3BTA;
 				ENABLE_PREVIEWS = YES;
@@ -313,8 +391,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jumpsaildive.test.AMCrashlyticsTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jumpsaildive.amcrashlyticstestapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = amcrashlyticstestapp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
