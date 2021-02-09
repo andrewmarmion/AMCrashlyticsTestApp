@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		2DC28F7A24913C71007FB999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F7924913C71007FB999 /* Preview Assets.xcassets */; };
 		2DC28F7D24913C71007FB999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F7B24913C71007FB999 /* LaunchScreen.storyboard */; };
 		2DC28F8524914276007FB999 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DC28F8424914276007FB999 /* GoogleService-Info.plist */; };
+		2DFE2FA125D30C0C00AC4AFE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2DFE2FA025D30C0C00AC4AFE /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE2FA125D30C0C00AC4AFE /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = AMCrashlyticsTestApp;
+			packageProductDependencies = (
+				2DFE2FA025D30C0C00AC4AFE /* FirebaseCrashlytics */,
+			);
 			productName = AMCrashlyticsTestApp;
 			productReference = 2DC28F6D24913C6F007FB999 /* AMCrashlyticsTestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 2DC28F6424913C6F007FB999;
+			packageReferences = (
+				2DFE2F9F25D30C0C00AC4AFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2DC28F6E24913C6F007FB999 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +308,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumpsaildive.amcrashlyticstestapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = amcrashlyticstestapp;
@@ -322,6 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumpsaildive.amcrashlyticstestapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = amcrashlyticstestapp;
@@ -352,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DFE2F9F25D30C0C00AC4AFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DFE2FA025D30C0C00AC4AFE /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DFE2F9F25D30C0C00AC4AFE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DC28F6524913C6F007FB999 /* Project object */;
 }
