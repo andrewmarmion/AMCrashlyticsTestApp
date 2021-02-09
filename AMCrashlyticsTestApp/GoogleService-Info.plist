@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:983994845374:ios:75d341c647a070874776ef</string>
+	<string>1:983994845374:ios:5d24f2fbd25c1f354776ef</string>
 	<key>DATABASE_URL</key>
 	<string>https://fir-crashlytics-22c13.firebaseio.com</string>
 </dict>
